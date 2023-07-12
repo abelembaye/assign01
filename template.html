@@ -1,79 +1,20 @@
 <!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html>
 <head>
-
-<meta charset="utf-8">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="pandoc" />
-<meta name="viewport" content="width=device-width">
-<meta property="og:title" content="template.knit" />
-
-
-
-
-
-
-<meta name="description" content="template.knit">
-
-<script id="pandoc-meta" type="application/json">
-{"newpage_html_class":"page-break-after","output":{"pagedown::html_paged":{"self_contained":false,"css":["default-fonts","default","mystyle.css"]}}}
-</script>
-
-<title>template.knit</title>
-
-
-<link href="template_files/paged-0.20/css/default-fonts.css" rel="stylesheet" />
-<link href="template_files/paged-0.20/css/default.css" rel="stylesheet" />
-<script src="template_files/paged-0.20/js/config.js"></script>
-<script src="template_files/paged-0.20/js/paged.js"></script>
-<script src="template_files/paged-0.20/js/hooks.js"></script>
-
-
-
-
-<link rel="stylesheet" href="mystyle.css" type="text/css" />
-
+    <meta charset="UTF-8">
+    <title>Template</title>
 </head>
-
 <body>
+    <h1>Template</h1>
+    <h2>Student: {{ student }}</h2>
 
-<div class="running-h1-title"></div>
+    <h3>Question 1</h3>
+    <p>{{ q01 }}</p>
 
-<div class="running-h2-title"></div>
+    <h3>Question 2a</h3>
+    <img src="data:image/png;base64,{{ q02_img01 }}" alt="Answer to question 2a">
 
-
-
-<div class="front-page">
-</div>
-
-<div class="front-matter-container">
-</div>
-
-<div class="main">
-<p>Your Name: {{student}}</p>
-<p>Your Answers for News Analysis Assignment 01 are below:</p>
-<ol style="list-style-type: decimal">
-<li></li>
-</ol>
-<p>{{q01}}</p>
-<ol start="2" style="list-style-type: decimal">
-<li></li>
-</ol>
-<p>2a. Your answer to question 2a is below:</p>
-<p>{{q02_img01}}</p>
-<p>2b. Your answer to question 2b is below:</p>
-<p>{{q02_img02}}</p>
-</div>
-
-
-
-<script>
-// when the page is about to reload via servr, remember the scroll position
-document.addEventListener('servr:reload', function(e) {
-  sessionStorage.setItem('pagedown-scroll', window.scrollY);
-});
-</script>
+    <h3>Question 2b</h3>
+    <img src="data:image/png;base64,{{ q02_img02 }}" alt="Answer to question 2b">
 </body>
 </html>
