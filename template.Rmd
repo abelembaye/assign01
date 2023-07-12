@@ -1,0 +1,45 @@
+---
+#title: "News Analysis HW01"
+#author: "Yihui Xie and Romain Lesur"
+#date: "`r Sys.Date()`"
+output:
+  pagedown::html_paged:
+    self_contained: false
+    css:
+      - default-fonts
+      - default
+      - mystyle.css
+    #toc: true
+    # change to true for a self-contained document, but it'll be a litte slower for Pandoc to render
+    #self_contained: false
+#lot: true # insert a list of tables
+#lof: true # insert a list of figures
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Your Name: {{student}}
+
+Your Answers for News Analysis Assignment 01 are below:
+
+1.
+
+{{q01}}
+
+2.
+
+2a. Your answer to question 2a is below:
+
+{{q02_img01}}
+
+2b. Your answer to question 2b is below:
+
+{{q02_img02}}
+
+```{r, echo=F}
+knitr::knit_exit()
+```
